@@ -3,9 +3,8 @@
 //time it is called (n, n + 1, n + 2, etc).
 
 
-/** Results: beats 81% runtime, beats 90.9% memory
+/** Results: runtime 81%, memory 90.9%
  *
- *  clean solution 1-liner
  *  const createCounter = (n: number) => () => n++;
  *
  */

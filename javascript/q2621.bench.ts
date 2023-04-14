@@ -2,7 +2,7 @@
 //millis milliseconds. It can resolve any value.
 import { bench } from 'vitest'
 
-/** Result: runtime beats 57%, memory beats 29%
+/** Result: runtime 57%, memory 29%
  *
  *
  *

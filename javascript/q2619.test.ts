@@ -2,7 +2,7 @@
 // method on any array and it will return the last element. If there are no
 // elements in the array, it should return -1.
 
-/** Result: beats 74% runtime, beats 25% memory
+/** Result: runtime 74%, memory 25%
  *
  *
  */
