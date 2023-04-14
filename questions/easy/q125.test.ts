@@ -22,11 +22,11 @@ function isPalindrome(s: string): boolean {
 
 
 
-test('q125', () => {
+it('q125', () => {
 
-expect(isPalindrome("A man, a plan, a canal: Panama")).toBe(true)
-expect(isPalindrome("race a car")).toBe(false)
-expect(isPalindrome(" ")).toBe(true)
-expect(isPalindrome("ab_a")).toBe(true)
+  expect(isPalindrome("A man, a plan, a canal: Panama")).toBe(true)
+  expect(isPalindrome("race a car")).toBe(false)
+  expect(isPalindrome(" ")).toBe(true)
+  expect(isPalindrome("ab_a")).toBe(true)
 
 })

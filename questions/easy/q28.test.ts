@@ -38,7 +38,7 @@ function strStr(haystack: string, needle: string): number {
 };
 
 
-test('q28', () => {
+it('q28', () => {
 
   expect(strStr("sadbutsad", "sad")).toBe(0)
   expect(strStr("leetcode", "leeto")).toBe(-1)
