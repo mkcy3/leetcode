@@ -1,6 +1,3 @@
-
-
-
 // Given an integer array nums, a reducer function fn, and an intial value init,
 // return a reduced array.
 
@@ -27,23 +24,20 @@ function reduce(nums: number[], fn: Fn, init: number): number {
   }
 
   return accum
-
-};
-
+}
 
 describe('q2626', () => {
-
-
   it('should return the sum of all numbers', () => {
-    expect(reduce([1,2,3,4], (accum, curr)=> accum+curr,0)).toBe(10)
+    expect(reduce([1, 2, 3, 4], (accum, curr) => accum + curr, 0)).toBe(10)
   })
 
   it('should return the multiplication of all numbers', () => {
-    expect(reduce([1,2,3,4], (accum, curr)=> accum+curr*curr,100)).toBe(130)
+    expect(
+      reduce([1, 2, 3, 4], (accum, curr) => accum + curr * curr, 100)
+    ).toBe(130)
   })
 
   it('should return init for empty array', () => {
-    expect(reduce([], (accum, curr)=> 0,25)).toBe(25)
+    expect(reduce([], (accum, curr) => 0, 25)).toBe(25)
   })
-
- })
+})

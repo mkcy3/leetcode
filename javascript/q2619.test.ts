@@ -8,26 +8,20 @@
  */
 
 interface Array<T> {
-    last(): T | -1;
+  last(): T | -1
 }
 
-
-Array.prototype.last = function() {
-
+Array.prototype.last = function () {
   if (this.length > 0) {
-
     return this[this.length - 1]
   }
 
   return -1
 }
 
-
 it('q2619', () => {
-  let arr = [1,2,3]
+  let arr = [1, 2, 3]
   expect(arr.last()).toBe(3)
   arr = []
   expect(arr.last()).toBe(-1)
-
-
- })
+})

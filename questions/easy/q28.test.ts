@@ -15,11 +15,8 @@
  */
 
 function strStr(haystack: string, needle: string): number {
-
   if (needle.length === 0) return 0
-  for (let i = 0 , j = 0; i < haystack.length; i++) {
-
-
+  for (let i = 0, j = 0; i < haystack.length; i++) {
     if (haystack.charAt(i) === needle.charAt(j)) {
       j++
     } else {
@@ -27,24 +24,18 @@ function strStr(haystack: string, needle: string): number {
       j = 0
     }
 
-
     if (j === needle.length) {
-
-      return i-j+1
+      return i - j + 1
     }
   }
 
   return -1
-};
-
+}
 
 it('q28', () => {
+  expect(strStr('sadbutsad', 'sad')).toBe(0)
+  expect(strStr('leetcode', 'leeto')).toBe(-1)
+  expect(strStr('aaba', 'b')).toBe(2)
 
-  expect(strStr("sadbutsad", "sad")).toBe(0)
-  expect(strStr("leetcode", "leeto")).toBe(-1)
-  expect(strStr("aaba","b")).toBe(2)
-
-  expect(strStr("mississippi","issip")).toBe(4)
-
+  expect(strStr('mississippi', 'issip')).toBe(4)
 })
-

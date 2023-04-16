@@ -8,21 +8,23 @@ import { bench } from 'vitest'
  *
  */
 async function sleep(millis: number): Promise<void> {
-  new Promise(resolve => setTimeout(resolve, millis))
+  new Promise((resolve) => setTimeout(resolve, millis))
 }
 
-
-
-
 describe('q2621', () => {
+  bench(
+    'should delay by 100ms',
+    () => {
+      sleep(100)
+    },
+    { time: 100 }
+  )
 
-  bench('should delay by 100ms', () => {
-    sleep(100)
-  }, { time: 100 })
-
-  bench('should delay by 200ms', () => {
-    sleep(200)
-  }, { time: 200 })
-
-
- })
+  bench(
+    'should delay by 200ms',
+    () => {
+      sleep(200)
+    },
+    { time: 200 }
+  )
+})
