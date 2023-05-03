@@ -15,7 +15,7 @@
 /** Result: 39% runtime, 5% memory
  *
  * Using index for loop actually produces TS error requiring ugly TS as fix
- *
+ * for each and element passing with does not produce error requiring as ...
  *arr.forEach(el => {
         if (typeof el === 'number') {
             result.push(el);
