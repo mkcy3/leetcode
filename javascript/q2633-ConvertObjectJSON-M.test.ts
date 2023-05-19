@@ -29,7 +29,7 @@ function jsonStringify(object: Json): Json {
   return null
 }
 
-describe('q2633', () => {
+describe('q2633. Convert Object to JSON String - Medium', () => {
   test('should return same order as object.keys()', () => {
     expect(jsonStringify({ y: 1, x: 2 })).toBe(`{"y":1,"x":2}`)
   })

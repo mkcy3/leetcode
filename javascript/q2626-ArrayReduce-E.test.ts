@@ -26,7 +26,7 @@ function reduce(nums: number[], fn: Fn, init: number): number {
   return accum
 }
 
-describe('q2626', () => {
+describe('q2626. Array Reduce Transformation - Easy', () => {
   it('should return the sum of all numbers', () => {
     expect(reduce([1, 2, 3, 4], (accum, curr) => accum + curr, 0)).toBe(10)
   })

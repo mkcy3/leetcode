@@ -41,7 +41,7 @@ function flat(arr: MultiDimensionalArray, n: number): MultiDimensionalArray {
   return flatten
 }
 
-describe('q2625', () => {
+describe('q2625. Flatten Deeply Nested Array - Medium', () => {
   test('should return original array with n = 0', () => {
     const arr = [1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]]
     expect(flat(arr, 0)).toStrictEqual([

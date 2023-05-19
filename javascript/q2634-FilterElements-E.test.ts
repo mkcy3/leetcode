@@ -18,7 +18,7 @@ function filter(arr: number[], fn: (n: number, i: number) => any): number[] {
   return newArr
 }
 
-describe('q2634', () => {
+describe('q2634. Filter Elements from Array - Easy', () => {
   it('should filter out values not greater than 10', () => {
     const arr = [0, 10, 20, 30]
     const fn = (n: number) => {

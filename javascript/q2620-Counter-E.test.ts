@@ -13,7 +13,7 @@ function createCounter(n: number): () => number {
   }
 }
 
-it('q2620', () => {
+it('q2620. Counter - Easy', () => {
   const counter = createCounter(10)
   expect(counter()).toBe(10)
   expect(counter()).toBe(11)

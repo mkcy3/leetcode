@@ -11,7 +11,7 @@ async function sleep(millis: number): Promise<void> {
   new Promise((resolve) => setTimeout(resolve, millis))
 }
 
-describe('q2621', () => {
+describe('q2621. Sleep - Easy', () => {
   bench(
     'should delay by 100ms',
     () => {

@@ -5,11 +5,11 @@
 // function.
 
 /** Result: 40% runtime, 20% memory
- * 
+ *
  * if(obj === null || obj === undefined || typeof classFunction !== 'function') return false;
  * return Object(obj) instanceof classFunction;
- * no recursion or while loops necessary. 
- */ 
+ * no recursion or while loops necessary.
+ */
 
 function checkIfInstanceOf(obj: any, classFunction: any): boolean {
   if (obj == null) return false
@@ -18,7 +18,7 @@ function checkIfInstanceOf(obj: any, classFunction: any): boolean {
   return checkIfInstanceOf(Object.getPrototypeOf(obj), classFunction)
 }
 
-describe('q2618', () => {
+describe('q2618. Check if Object Instance of Class - Medium', () => {
   test('should return true as date constructor is instance of date', () => {
     expect(checkIfInstanceOf(new Date(), Date)).toBe(true)
   })

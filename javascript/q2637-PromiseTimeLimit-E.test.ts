@@ -21,7 +21,7 @@ function timeLimit(fn: FnPromise, t: number): FnPromise {
   }
 }
 
-describe('q2637', () => {
+describe('q2637. Promise Time Limit - Easy', () => {
   it.fails('should fail and return Time Limit Exceeded', async () => {
     const fn = async (n: number) => {
       await new Promise((res) => setTimeout(res, 100))

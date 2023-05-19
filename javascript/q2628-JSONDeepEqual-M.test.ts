@@ -33,7 +33,7 @@ function areDeeplyEqual(o1: any, o2: any): boolean {
   return true
 }
 
-describe('q2628', () => {
+describe('q2628. JSON Deep Equal - Medium', () => {
   test('should return true as key value match', () => {
     expect(areDeeplyEqual({ x: 1, y: 2 }, { x: 1, y: 2 })).toBe(true)
   })

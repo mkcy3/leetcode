@@ -29,7 +29,7 @@ function compose(functions: F[]): F {
   }
 }
 
-describe('q2629', () => {
+describe('q2629. Function Composition - Easy', () => {
   it('should return 65', () => {
     const fn = compose([(x) => x + 1, (x) => x * x, (x) => 2 * x])
     expect(fn(4)).toBe(65)

@@ -16,7 +16,7 @@ function map(arr: number[], fn: (n: number, i: number) => number): number[] {
   return arr
 }
 
-describe('q2635', () => {
+describe('q2635. Apply Transform Over Each Element - Easy', () => {
   it('should increase all values by one', () => {
     const arr = [1, 2, 3]
     const fn = (n: number) => {

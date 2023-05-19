@@ -19,7 +19,7 @@ Array.prototype.last = function () {
   return -1
 }
 
-it('q2619', () => {
+it('q2619. Array Prototype Last - Easy', () => {
   let arr = [1, 2, 3]
   expect(arr.last()).toBe(3)
   arr = []
